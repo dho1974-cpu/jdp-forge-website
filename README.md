@@ -1,4 +1,3 @@
-# jdp-forge-website
 # JDP Forge Website
 
 Official website of JDP Forge.
