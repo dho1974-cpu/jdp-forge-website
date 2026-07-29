@@ -22,13 +22,17 @@ Schwerpunkte:
 
 ## JDP Velora
 
-Zukünftige KI-Companion-Plattform.
+JDP Velora ist eine zukünftige KI-gestützte Chatplattform.
 
 Ziel:
 
-- persönliche Assistenz
-- Interaktion
-- neue Formen digitaler Begleiter
+- moderne Kommunikation
+- intelligente Assistenzfunktionen
+- erweiterbare Chat-Erlebnisse
+- benutzerfreundliche Interaktion
+
+Velora wird als eigenständiges Produkt innerhalb
+des JDP Forge Portfolios entwickelt.
 
 
 ## Weitere Projekte
