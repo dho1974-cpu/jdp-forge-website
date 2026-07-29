@@ -1,0 +1,132 @@
+/* ===================================
+   JDP Forge Website
+   Main Stylesheet
+   Version 0.1
+=================================== */
+
+
+/* Grundsetup */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0b0b0d;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111116;
+    border-bottom: 1px solid #2a2a2f;
+}
+
+.logo {
+    width: 180px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff7a00;
+}
+
+
+/* Hero Bereich */
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 10%;
+}
+
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+
+.hero h1 span {
+    color: #ff7a00;
+}
+
+
+.hero p {
+    max-width: 700px;
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+
+/* Produkte */
+
+.products {
+    padding: 60px 8%;
+}
+
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.product-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.product-card {
+    background: #15151b;
+    border: 1px solid #292933;
+    border-radius: 12px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+}
+
+
+.product-card:hover {
+    border-color: #ff7a00;
+}
+
+
+.product-card img {
+    max-width: 180px;
+    margin-bottom: 20px;
+}
+
+
+/* Footer */
+
+footer {
+    background: #111116;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    color: #999;
+}
