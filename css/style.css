@@ -151,3 +151,17 @@ footer {
     margin-top: 50px;
     color: var(--footer-text);
 }
+
+/* Produktidentitäten */
+
+.product-card.nexus:hover {
+    border-color: var(--nexus-blue);
+}
+
+.product-card.stream-suite:hover {
+    border-color: var(--forge-orange);
+}
+
+.product-card.velora:hover {
+    border-color: var(--velora-purple);
+}
