@@ -132,7 +132,7 @@ nav a {
 
 
     .product-card:hover {
-        border-color: var(--forge-orange);
+        transform: translateY(-5px);
     }
 
 
