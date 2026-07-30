@@ -20,6 +20,16 @@ body {
     line-height: 1.6;
 }
 
+:root {
+    --forge-orange: #ff7a00;
+    --background: #0b0b0d;
+    --surface: #15151b;
+    --border: #292933;
+    --text: #ffffff;
+    --muted: #cccccc;
+    --nexus-blue: #00bfff;
+    --velora-purple: #8a2be2;
+}
 
 /* Header */
 
