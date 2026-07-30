@@ -1,8 +1,24 @@
 /* ===================================
    JDP Forge Website
    Main Stylesheet
-   Version 0.1
+   Version 0.2
 =================================== */
+
+
+/* Farbdefinitionen */
+
+:root {
+    --forge-orange: #ff7a00;
+    --background: #0b0b0d;
+    --surface: #15151b;
+    --header: #111116;
+    --border: #292933;
+    --text: #ffffff;
+    --muted: #cccccc;
+    --footer-text: #999999;
+    --nexus-blue: #00bfff;
+    --velora-purple: #8a2be2;
+}
 
 
 /* Grundsetup */
@@ -13,23 +29,14 @@
     padding: 0;
 }
 
+
 body {
     font-family: "Segoe UI", Arial, sans-serif;
-    background: #0b0b0d;
-    color: #ffffff;
+    background: var(--background);
+    color: var(--text);
     line-height: 1.6;
 }
 
-:root {
-    --forge-orange: #ff7a00;
-    --background: #0b0b0d;
-    --surface: #15151b;
-    --border: #292933;
-    --text: #ffffff;
-    --muted: #cccccc;
-    --nexus-blue: #00bfff;
-    --velora-purple: #8a2be2;
-}
 
 /* Header */
 
@@ -38,24 +45,27 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 8%;
-    background: #111116;
-    border-bottom: 1px solid #2a2a2f;
+    background: var(--header);
+    border-bottom: 1px solid var(--border);
 }
+
 
 .logo {
     width: 180px;
 }
 
+
 nav a {
-    color: #ffffff;
+    color: var(--text);
     text-decoration: none;
     margin-left: 25px;
     transition: 0.3s;
 }
 
-nav a:hover {
-    color: #ff7a00;
-}
+
+    nav a:hover {
+        color: var(--forge-orange);
+    }
 
 
 /* Hero Bereich */
@@ -71,22 +81,22 @@ nav a:hover {
 }
 
 
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-}
+    .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+    }
 
 
-.hero h1 span {
-    color: #ff7a00;
-}
+        .hero h1 span {
+            color: var(--forge-orange);
+        }
 
 
-.hero p {
-    max-width: 700px;
-    font-size: 1.2rem;
-    color: #cccccc;
-}
+    .hero p {
+        max-width: 700px;
+        font-size: 1.2rem;
+        color: var(--muted);
+    }
 
 
 /* Produkte */
@@ -96,10 +106,10 @@ nav a:hover {
 }
 
 
-.products h2 {
-    text-align: center;
-    margin-bottom: 40px;
-}
+    .products h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
 
 
 .product-grid {
@@ -111,32 +121,33 @@ nav a:hover {
 
 
 .product-card {
-    background: #15151b;
-    border: 1px solid #292933;
+    background: var(--surface);
+    border: 1px solid var(--border);
     border-radius: 12px;
     padding: 30px;
     width: 300px;
     text-align: center;
+    transition: 0.3s;
 }
 
 
-.product-card:hover {
-    border-color: #ff7a00;
-}
+    .product-card:hover {
+        border-color: var(--forge-orange);
+    }
 
 
-.product-card img {
-    max-width: 180px;
-    margin-bottom: 20px;
-}
+    .product-card img {
+        max-width: 180px;
+        margin-bottom: 20px;
+    }
 
 
 /* Footer */
 
 footer {
-    background: #111116;
+    background: var(--header);
     text-align: center;
     padding: 25px;
     margin-top: 50px;
-    color: #999;
+    color: var(--footer-text);
 }
