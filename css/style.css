@@ -615,10 +615,26 @@ footer {
         gap: 15px;
     }
 
-    nav a {
-        margin-left: 10px;
-        margin-right: 10px;
+    header {
+        padding: 15px 5%;
     }
+
+    .logo {
+        width: 150px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+        nav a {
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 0.9rem;
+        }
 
     .hero h1 {
         font-size: 3rem;
@@ -628,10 +644,32 @@ footer {
         gap: 20px;
     }
 
+    .products {
+        padding: 70px 5%;
+    }
+
+        .products h2 {
+            margin-bottom: 35px;
+        }
+
     .product-card {
         width: 100%;
         max-width: 360px;
+        min-height: 320px;
+        padding: 30px 25px;
     }
+
+        .product-card img {
+            max-width: 160px;
+        }
+
+        .product-card h3 {
+            font-size: 1.3rem;
+        }
+
+        .product-card p {
+            font-size: 0.95rem;
+        }
 
     .feature-grid {
         grid-template-columns: 1fr;
