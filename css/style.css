@@ -155,13 +155,13 @@ footer {
 /* Produktidentitäten */
 
 .product-card.nexus:hover {
-    border-color: var(--nexus-blue);
+    border-color: var(--nexus-blue) !important;
 }
 
 .product-card.stream-suite:hover {
-    border-color: var(--forge-orange);
+    border-color: var(--forge-orange) !important;
 }
 
 .product-card.velora:hover {
-    border-color: var(--velora-purple);
+    border-color: var(--velora-purple) !important;
 }
