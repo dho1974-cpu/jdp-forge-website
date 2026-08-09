@@ -1005,3 +1005,227 @@ footer {
     border-color: var(--velora-purple);
     box-shadow: 0 0 20px rgba(138, 43, 226, 0.12);
 }
+/* ===================================
+   JDP VELORA
+   Product Page
+=================================== */
+
+.velora-page {
+    background: var(--background);
+}
+
+
+/* Hero */
+
+.velora-hero {
+    min-height: 72vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 10%;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient( circle at center, rgba(138, 43, 226, 0.12), transparent 58% );
+}
+
+    .velora-hero::before {
+        content: "";
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        border: 1px solid rgba(138, 43, 226, 0.10);
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .velora-hero::after {
+        content: "";
+        position: absolute;
+        width: 850px;
+        height: 850px;
+        border: 1px solid rgba(138, 43, 226, 0.05);
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+.velora-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 850px;
+}
+
+
+/* Labels */
+
+.velora-label {
+    color: var(--velora-purple);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+
+/* Velora Produkt-Marker */
+
+.velora-mark {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 115px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(138, 43, 226, 0.4);
+    border-radius: 12px;
+    background: rgba(138, 43, 226, 0.05);
+    color: var(--velora-purple);
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    box-shadow: 0 0 30px rgba(138, 43, 226, 0.08);
+}
+
+
+/* Hero */
+
+.velora-hero h1 {
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.velora-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: 1.2rem;
+}
+
+
+/* Intro */
+
+.velora-intro {
+    padding: 110px 10%;
+    text-align: center;
+    background: var(--surface);
+}
+
+.velora-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.velora-intro h2,
+.velora-concept h2,
+.velora-development h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.velora-intro p {
+    color: var(--muted);
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+
+/* Konzept */
+
+.velora-concept {
+    padding: 110px 8%;
+    text-align: center;
+}
+
+.velora-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.velora-card {
+    padding: 35px;
+    text-align: left;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .velora-card:hover {
+        transform: translateY(-5px);
+        border-color: var(--velora-purple);
+        box-shadow: 0 0 25px rgba(138, 43, 226, 0.12);
+    }
+
+    .velora-card h3 {
+        color: var(--velora-purple);
+        margin-bottom: 12px;
+    }
+
+    .velora-card p {
+        color: var(--muted);
+        line-height: 1.7;
+    }
+
+
+/* Entwicklung */
+
+.velora-development {
+    padding: 110px 10%;
+    text-align: center;
+    background: var(--surface);
+}
+
+    .velora-development p {
+        color: var(--muted);
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 35px;
+    }
+
+
+/* Button */
+
+.velora-button {
+    display: inline-block;
+    padding: 13px 26px;
+    border: 1px solid var(--velora-purple);
+    border-radius: 8px;
+    color: var(--velora-purple);
+    background: rgba(138, 43, 226, 0.05);
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .velora-button:hover {
+        transform: translateY(-3px);
+        background: rgba(138, 43, 226, 0.12);
+        box-shadow: 0 0 25px rgba(138, 43, 226, 0.15);
+    }
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .velora-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .velora-hero h1 {
+        font-size: 3rem;
+    }
+
+    .velora-mark {
+        width: 200px;
+        height: 95px;
+    }
+}
