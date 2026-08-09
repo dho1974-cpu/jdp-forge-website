@@ -10,102 +10,196 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-
 <body>
-
 
     <header>
 
-        <img class="logo" src="images/logos/JDP-Forge-Logo.png" alt="JDP Forge Logo">
+        <img class="logo"
+             src="images/logos/JDP-Forge-Logo.png"
+             alt="JDP Forge Logo">
 
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Produkte</a>
-            <a href="#">Über uns</a>
-            <a href="#">Kontakt</a>
+            <a href="#home">Home</a>
+            <a href="#produkte">Produkte</a>
+            <a href="#ueber-uns">Über uns</a>
+            <a href="#kontakt">Kontakt</a>
         </nav>
 
     </header>
 
 
+    <main>
 
-    <section class="hero">
+        <!-- Hero -->
 
-        <h1>
-            Willkommen bei <span>JDP Forge</span>
-        </h1>
+        <section class="hero" id="home">
 
+            <div class="hero-content">
 
-        <p>
-            Entwicklung moderner Softwarelösungen,
-            KI-Systeme und digitale Werkzeuge
-            für die Zukunft.
-        </p>
+                <div class="hero-label">
+                    JDP FORGE
+                </div>
 
-
-    </section>
-
-
-
-
-    <section class="products">
-
-        <h2>Unsere Projekte</h2>
-
-
-        <div class="product-grid">
-
-
-            <div class="product-card nexus">
-
-                <img src="images/logos/Nexus-Logo-C.png" alt="Nexus Logo">
-
-                <h3>Nexus</h3>
+                <h1>
+                    Software.
+                    <span>Innovation.</span>
+                    Zukunft.
+                </h1>
 
                 <p>
-                    KI-Management und intelligente Automatisierung
-                    für digitale Arbeitsprozesse.
+                    Wir entwickeln moderne Softwarelösungen,
+                    KI-Systeme und digitale Werkzeuge für
+                    neue Möglichkeiten der digitalen Welt.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#produkte" class="button primary">
+                        Unsere Produkte
+                    </a>
+
+                    <a href="#ueber-uns" class="button secondary">
+                        Über JDP Forge
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Produkte -->
+
+        <section class="products" id="produkte">
+
+            <h2>Unsere Projekte</h2>
+
+            <div class="product-grid">
+
+
+                <!-- Nexus -->
+
+                <div class="product-card nexus">
+
+                    <img src="images/logos/Nexus-Logo-C.png"
+                         alt="Nexus Logo">
+
+                    <h3>Nexus</h3>
+
+                    <p>
+                        KI-Management und intelligente Automatisierung
+                        für digitale Arbeitsprozesse.
+                    </p>
+
+                    <a href="nexus.html"
+                       class="product-button nexus-button">
+                        Mehr erfahren →
+                    </a>
+
+                </div>
+
+
+                <!-- JDP Stream Suite -->
+
+                <div class="product-card stream-suite">
+
+                    <div class="product-placeholder">
+                        JDP
+                    </div>
+
+                    <h3>JDP Stream Suite</h3>
+
+                    <p>
+                        Werkzeuge für interaktive Livestreams,
+                        Automatisierung und Creator.
+                    </p>
+
+                    <a href="stream-suite.html"
+                       class="product-button stream-button">
+                        Mehr erfahren →
+                    </a>
+
+                </div>
+
+
+                <!-- JDP Velora -->
+
+                <div class="product-card velora">
+
+                    <div class="product-placeholder velora-placeholder">
+                        VELORA
+                    </div>
+
+                    <h3>JDP Velora</h3>
+
+                    <p>
+                        Eine zukünftige KI-gestützte Chatplattform
+                        für moderne Kommunikation und intelligente
+                        Interaktion.
+                    </p>
+
+                    <a href="velora.html"
+                       class="product-button velora-button">
+                        Mehr erfahren →
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Über uns -->
+
+        <section class="about" id="ueber-uns">
+
+            <div class="section-content">
+
+                <div class="section-label">
+                    JDP FORGE
+                </div>
+
+                <h2>Technologie mit Zukunft</h2>
+
+                <p>
+                    JDP Forge entwickelt eigenständige Software,
+                    intelligente Systeme und digitale Werkzeuge.
+                    Dabei verbinden wir moderne Technologie mit
+                    einem klaren Anspruch an Qualität,
+                    Erweiterbarkeit und Zukunftssicherheit.
                 </p>
 
             </div>
 
+        </section>
 
 
-            <div class="product-card stream-suite">
+        <!-- Kontakt -->
 
+        <section class="contact" id="kontakt">
 
-                <h3>JDP Stream Suite</h3>
+            <div class="section-content">
 
-                <p>
-                    Werkzeuge für interaktive Livestreams,
-                    Automatisierung und Creator.
-                </p>
+                <div class="section-label">
+                    KONTAKT
+                </div>
 
-
-            </div>
-
-
-
-
-            <div class="product-card velora">
-
-                <h3>JDP Velora</h3>
+                <h2>Du möchtest mehr erfahren?</h2>
 
                 <p>
-                    Eine zukünftige KI-gestützte Chatplattform
-                    für moderne Kommunikation und intelligente
-                    Interaktion.
+                    Weitere Informationen zu JDP Forge,
+                    unseren Produkten und zukünftigen Projekten
+                    werden hier künftig bereitgestellt.
                 </p>
 
             </div>
 
+        </section>
 
-
-        </div>
-
-    </section>
-
-
+    </main>
 
 
     <footer>
@@ -117,7 +211,6 @@
         </p>
 
     </footer>
-
 
 
 </body>
