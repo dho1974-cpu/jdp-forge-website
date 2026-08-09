@@ -39,6 +39,9 @@ body {
     background: var(--background);
     color: var(--text);
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -1227,5 +1230,263 @@ footer {
     .velora-mark {
         width: 200px;
         height: 95px;
+    }
+}
+/* ===================================
+   STARTSEITE
+   ÜBER UNS & KONTAKT
+=================================== */
+
+.about {
+    padding: 110px 10%;
+    text-align: center;
+    background: var(--surface);
+}
+
+.contact {
+    padding: 110px 10%;
+    text-align: center;
+    background: var(--background);
+}
+
+.section-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.section-label {
+    color: var(--forge-orange);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.about h2,
+.contact h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.about p,
+.contact p {
+    max-width: 750px;
+    margin: 0 auto 20px;
+    color: var(--muted);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.contact-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 26px;
+    border: 1px solid var(--forge-orange);
+    border-radius: 8px;
+    color: var(--forge-orange);
+    background: rgba(255, 122, 0, 0.05);
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .contact-button:hover {
+        transform: translateY(-3px);
+        background: rgba(255, 122, 0, 0.12);
+        box-shadow: 0 0 25px rgba(255, 122, 0, 0.15);
+    }
+/* ===================================
+   ÜBER UNS - FEINSCHLIFF
+=================================== */
+
+.about {
+    position: relative;
+    overflow: hidden;
+}
+
+    .about::before {
+        content: "";
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        border: 1px solid rgba(255, 122, 0, 0.05);
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+
+    .about::after {
+        content: "";
+        position: absolute;
+        width: 700px;
+        height: 700px;
+        border: 1px solid rgba(255, 122, 0, 0.025);
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+
+    .about .section-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .about .section-label {
+        text-shadow: 0 0 15px rgba(255, 122, 0, 0.25);
+    }
+
+    .about h2 {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+/* ===================================
+   KONTAKT - ABSCHLUSS
+=================================== */
+
+.contact {
+    position: relative;
+    overflow: hidden;
+}
+
+    .contact::before {
+        content: "";
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        border: 1px solid rgba(255, 122, 0, 0.04);
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+
+    .contact::after {
+        content: "";
+        position: absolute;
+        width: 650px;
+        height: 650px;
+        border: 1px solid rgba(255, 122, 0, 0.02);
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+
+    .contact .section-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .contact .section-label {
+        text-shadow: 0 0 15px rgba(255, 122, 0, 0.25);
+    }
+
+.contact-button {
+    box-shadow: 0 0 15px rgba(255, 122, 0, 0.05);
+}
+
+    .contact-button:hover {
+        box-shadow: 0 0 30px rgba(255, 122, 0, 0.18);
+    }
+/* ===================================
+   FOOTER LINKS
+=================================== */
+
+footer a {
+    color: var(--footer-text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+    footer a:hover {
+        color: var(--forge-orange);
+    }
+/* ===================================
+   SEITENLAYOUT
+   Sticky Footer
+=================================== */
+
+main {
+    flex: 1;
+}
+/* ===================================
+   RECHTLICHE SEITEN
+   Impressum & Datenschutz
+=================================== */
+
+.legal-page {
+    padding: 110px 10%;
+    min-height: 70vh;
+    background: var(--background);
+}
+
+.legal-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+    .legal-content h1 {
+        font-size: clamp(2.8rem, 5vw, 4.5rem);
+        line-height: 1.1;
+        margin-bottom: 45px;
+    }
+
+    .legal-content h2 {
+        font-size: 1.5rem;
+        margin-top: 45px;
+        margin-bottom: 15px;
+    }
+
+    .legal-content p {
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .legal-content strong {
+        color: var(--text);
+    }
+
+.legal-placeholder {
+    padding: 25px 30px;
+    margin-bottom: 40px;
+    border: 1px solid var(--forge-orange);
+    border-radius: 12px;
+    background: rgba(255, 122, 0, 0.04);
+}
+
+    .legal-placeholder p {
+        margin-bottom: 10px;
+    }
+
+        .legal-placeholder p:last-child {
+            margin-bottom: 0;
+        }
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .legal-page {
+        padding: 80px 7%;
+    }
+
+    .legal-content h1 {
+        font-size: 3rem;
+    }
+
+    .legal-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .legal-placeholder {
+        padding: 20px;
     }
 }
